@@ -67,11 +67,7 @@ jobs:
       - name: Initialize
         id: init
         run: |
-          if [["1"=="1"]]; then
-            echo "run-checks=true" >> $GITHUB_OUTPUT
-          else
-            echo "run-checks=false" >> $GITHUB_OUTPUT
-          fi
+          echo "run-checks=true" >> $GITHUB_OUTPUT
       - name: Set up JDK 17
         uses: actions/setup-java@v2
         if: steps.init.outputs.run-checks == 'true'
