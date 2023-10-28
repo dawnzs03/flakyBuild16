@@ -1,7 +1,0 @@
-= Camel languages supported on Quarkus
-:indexer-module: ROOT
-:indexer-rel-filter: languages/*.yml
-:indexer-human-readable-kind: Language
-:indexer-human-readable-kind-plural: languages
-
-include::partial$reference/summary-table.adoc[]

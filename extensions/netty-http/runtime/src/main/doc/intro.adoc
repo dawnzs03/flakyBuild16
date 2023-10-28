@@ -1,1 +1,0 @@
-The Netty HTTP extension provides HTTP transport on top of the xref:reference/extensions/netty.adoc[Netty extension].

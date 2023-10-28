@@ -1,7 +1,0 @@
-= Camel misc. components supported on Quarkus
-:indexer-module: ROOT
-:indexer-rel-filter: others/*.yml
-:indexer-human-readable-kind: Misc. component
-:indexer-human-readable-kind-plural: misc. components
-
-include::partial$reference/summary-table.adoc[]

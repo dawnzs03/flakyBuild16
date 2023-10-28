@@ -1,2 +1,0 @@
-
-By default, only FHIR versions `R4` & `DSTU3` are enabled in native mode, since they are the default values on the FHIR component and DataFormat.

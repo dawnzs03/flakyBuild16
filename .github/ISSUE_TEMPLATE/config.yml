@@ -1,25 +1,18 @@
-#
-# Licensed to the Apache Software Foundation (ASF) under one or more
-# contributor license agreements.  See the NOTICE file distributed with
-# this work for additional information regarding copyright ownership.
-# The ASF licenses this file to You under the Apache License, Version 2.0
-# (the "License"); you may not use this file except in compliance with
-# the License.  You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
-  - name: 💬 Apache Camel Zulip chat
-    url: https://camel.zulipchat.com/
-    about: Live chat for the Apache Camel project
-  - name: ✉️ Apache Camel mailing list
-    url: https://camel.apache.org/community/mailing-list/
-    about: Post a question on the Apache Camel User mailing list
+    - name: 📦 Metro Issue
+      url: https://github.com/facebook/metro/issues/new
+      about: |
+        If you've encountered a module resolution problem, e.g. "Error: Unable to resolve module ...", or something else that might be related to Metro, please open an issue in the Metro repo instead.
+    - name: 📃 Documentation Issue
+      url: https://github.com/facebook/react-native-website/issues
+      about: Please report documentation issues in the React Native website repository.
+    - name: 🤔 Questions and Help
+      url: https://reactnative.dev/help
+      about: Looking for help with your app? Please refer to the React Native community's support resources.
+    - name: 💫 New Architecture - Questions & Technical Deep dive insights
+      url: https://github.com/reactwg/react-native-new-architecture
+      about: Questions and doubts related to technical questions for the New Architecture should be directed to the Working Group. Instructions on how to join are available in the README.
+    - name: 🚀 Discussions and Proposals
+      url: https://github.com/react-native-community/discussions-and-proposals
+      about: Discuss the future of React Native in the React Native community's discussions and proposals repository.

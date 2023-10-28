@@ -1,3 +1,0 @@
-message Pojo {
-    required string text = 1;
-}

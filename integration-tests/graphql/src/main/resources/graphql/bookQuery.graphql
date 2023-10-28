@@ -1,9 +1,0 @@
-query BookById($id: ID) {
-  bookById(id: $id) {
-    id
-    name
-    author {
-      name
-    }
-  }
-}

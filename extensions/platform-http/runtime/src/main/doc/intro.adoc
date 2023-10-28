@@ -1,3 +1,0 @@
-This extension allows for creating HTTP endpoints for consuming HTTP requests.
-
-It is built on top of the Eclipse Vert.x HTTP server provided by the `quarkus-vertx-http` extension.

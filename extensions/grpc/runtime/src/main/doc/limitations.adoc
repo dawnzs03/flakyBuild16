@@ -1,3 +1,0 @@
-=== Integration with Quarkus gRPC is not supported
-
-At present there is no support for integrating Camel Quarkus gRPC with Quarkus gRPC. If you have both the `camel-quarkus-grpc` and `quarkus-grpc` extension dependency on the classpath, you are likely to encounter problems at build time when compiling your application.

@@ -1,7 +1,0 @@
-= Camel data formats supported on Quarkus
-:indexer-module: ROOT
-:indexer-rel-filter: dataformats/*.yml
-:indexer-human-readable-kind: Data format
-:indexer-human-readable-kind-plural: data formats
-
-include::partial$reference/summary-table.adoc[]
