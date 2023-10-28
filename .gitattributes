@@ -1,5 +1,14 @@
-CHANGELOG.asciidoc  merge=union
+# Auto detect text files and perform LF normalization
+* text=auto
 
-# These files contain expected text output, and should not be changed on
-# Windows
-build-tools-internal/src/test/resources/org/elasticsearch/gradle/internal/release/*.asciidoc text eol=lf
+# Known text files
+*.java text
+*.xml text
+*.yml text
+*.md text
+*.sh text
+*.css text
+*.txt text
+
+# Known binary files
+*.jar binary
