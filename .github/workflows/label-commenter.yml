@@ -1,0 +1,20 @@
+# Configuration for Label Commenter - https://github.com/peaceiris/actions-label-commenter
+name: Label Commenter
+
+on:
+  push:
+    branches: [ selenium ]
+
+
+
+
+
+
+
+jobs:
+  comment:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Label Commenter
+        uses: peaceiris/actions-label-commenter@v1

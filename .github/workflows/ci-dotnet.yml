@@ -1,0 +1,47 @@
+name: CI - .NET
+
+on:
+  push:
+    branches: [ selenium ]
+
+
+
+jobs:
+  build:
+    name: Build
+    uses: ./.github/workflows/bazel.yml
+    with:
+      name: Build
+      cache-key: false
+      os: windows
+      run: bazel build //dotnet/src/webdriver:package //dotnet/src/support:package
+
+  integration-tests:
+    name: Browser Tests
+    needs: build
+    uses: ./.github/workflows/bazel.yml
+    strategy:
+      fail-fast: false
+      matrix:
+        driver:
+          - Chrome
+          - Firefox
+        framework:
+          - net48
+          - net6.0
+        include:
+          - driver: Chrome
+            browser: chrome
+          - driver: Firefox
+            browser: chrome
+    with:
+      name: Browser Tests (${{ matrix.driver }}, ${{ matrix.framework }})
+      browser: ${{ matrix.browser }}
+      cache-key: false
+      java-version: 17
+      os: windows
+      run: |
+        bazel build //dotnet/test/common:${{ matrix.browser }}
+        $env:ACTIVE_DRIVER_CONFIG = '${{ matrix.driver }}'
+        cd dotnet
+        dotnet test test/common/WebDriver.Common.Tests.csproj --framework ${{ matrix.framework }}
