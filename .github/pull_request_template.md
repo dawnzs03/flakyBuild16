@@ -1,21 +1,29 @@
-<!-- Thanks for submitting a pull request! We appreciate you spending the time to work on these changes. Please provide enough information so that others can review your pull request. The three fields below are mandatory. -->
+<!--
+Thanks for contributing to Spring Boot. Please review the following notes before
+submitting a pull request.
 
-## Summary:
+Please submit only genuine pull-requests. Do not use this repository as a GitHub
+playground.
 
-<!-- Explain the **motivation** for making this change. What existing problem does the pull request solve? -->
+Security Vulnerabilities
 
-## Changelog:
+STOP! If your contribution fixes a security vulnerability, please do not submit it.
+Instead, please head over to https://spring.io/security-policy to learn how to disclose a
+vulnerability responsibly.
 
-<!-- Help reviewers and the release process by writing your own changelog entry.
+Dependency Upgrades
 
-Pick one each for the category and type tags:
+Please do not open a pull request for a straightforward dependency upgrade (one that
+only updates the version property). We have a semi-automated process for such upgrades
+that we prefer to use. However, if the upgrade is more involved (such as requiring
+changes for removed or deprecated API) your pull request is most welcome.
 
-[ANDROID|GENERAL|IOS|INTERNAL] [BREAKING|ADDED|CHANGED|DEPRECATED|REMOVED|FIXED|SECURITY] - Message
+Describing Your Changes
 
-For more details, see:
-https://reactnative.dev/contributing/changelogs-in-pull-requests
+If, having reviewed the notes above, you're ready to submit your pull request, please
+provide a brief description of the proposed changes. If they fix a bug, please
+describe the broken behaviour and how the changes fix it. If they make an enhancement,
+please describe the new functionality and why you believe it's useful. If your pull
+request relates to any existing issues, please reference them by using the issue number
+prefixed with #.
 -->
-
-## Test Plan:
-
-<!-- Demonstrate the code is solid. Example: The exact commands you ran and their output, screenshots / videos if the pull request changes the user interface. -->
