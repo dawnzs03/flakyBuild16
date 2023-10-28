@@ -439,9 +439,8 @@ public class LuceneTests extends ESTestCase {
                     w.addDocument(doc);
                 }
                 w.forceMerge(1);
-                try (IndexReader indexReader = DirectoryReader.open(w)) {
-                    IndexSearcher searcher = newSearcher(indexReader);
-                    IndexReader reader = searcher.getIndexReader();
+                try (IndexReader reader = DirectoryReader.open(w)) {
+                    IndexSearcher searcher = newSearcher(reader);
                     searcher.setQueryCache(null);
                     Query query = new IndexOrDocValuesQuery(new UnsupportedQuery(), NumericDocValuesField.newSlowRangeQuery("foo", 3L, 5L));
                     Weight weight = searcher.createWeight(query, ScoreMode.COMPLETE_NO_SCORES, 1f);

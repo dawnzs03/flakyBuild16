@@ -57,7 +57,7 @@ public class VectorHighlighterTests extends ESTestCase {
         FastVectorHighlighter highlighter = new FastVectorHighlighter();
         String fragment = highlighter.getBestFragment(
             highlighter.getFieldQuery(new TermQuery(new Term("content", "bad"))),
-            searcher.getIndexReader(),
+            reader,
             topDocs.scoreDocs[0].doc,
             "content",
             30
@@ -79,9 +79,8 @@ public class VectorHighlighterTests extends ESTestCase {
         document.add(new Field("content", "the big bad dog", vectorsType));
         indexWriter.addDocument(document);
 
-        IndexReader indexReader = DirectoryReader.open(indexWriter);
-        IndexSearcher searcher = newSearcher(indexReader);
-        IndexReader reader = searcher.getIndexReader();
+        IndexReader reader = DirectoryReader.open(indexWriter);
+        IndexSearcher searcher = newSearcher(reader);
         TopDocs topDocs = searcher.search(new TermQuery(new Term("_id", "1")), 1);
 
         assertThat(topDocs.totalHits.value, equalTo(1L));
@@ -144,7 +143,7 @@ public class VectorHighlighterTests extends ESTestCase {
         FastVectorHighlighter highlighter = new FastVectorHighlighter();
         String fragment = highlighter.getBestFragment(
             highlighter.getFieldQuery(new TermQuery(new Term("content", "bad"))),
-            searcher.getIndexReader(),
+            reader,
             topDocs.scoreDocs[0].doc,
             "content",
             30
@@ -170,7 +169,7 @@ public class VectorHighlighterTests extends ESTestCase {
         FastVectorHighlighter highlighter = new FastVectorHighlighter();
         String fragment = highlighter.getBestFragment(
             highlighter.getFieldQuery(new TermQuery(new Term("content", "bad"))),
-            searcher.getIndexReader(),
+            reader,
             topDocs.scoreDocs[0].doc,
             "content",
             30
