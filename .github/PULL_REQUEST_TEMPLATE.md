@@ -1,30 +1,21 @@
-**Thanks for contributing to Selenium!**
-**A PR well described will help maintainers to quickly review and merge it**
+<!-- Thanks for submitting a pull request! We appreciate you spending the time to work on these changes. Please provide enough information so that others can review your pull request. The three fields below are mandatory. -->
 
-Before submitting your PR, please check our [contributing](https://github.com/SeleniumHQ/selenium/blob/trunk/CONTRIBUTING.md) guidelines.
-Avoid large PRs, help reviewers by making them as simple and short as possible.
+## Summary:
 
+<!-- Explain the **motivation** for making this change. What existing problem does the pull request solve? -->
 
-<!--- Provide a general summary of your changes in the Title above -->
+## Changelog:
 
-### Description
-<!--- Describe your changes in detail -->
+<!-- Help reviewers and the release process by writing your own changelog entry.
 
-### Motivation and Context
-<!--- Why is this change required? What problem does it solve? -->
+Pick one each for the category and type tags:
 
-### Types of changes
-<!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to change)
+[ANDROID|GENERAL|IOS|INTERNAL] [BREAKING|ADDED|CHANGED|DEPRECATED|REMOVED|FIXED|SECURITY] - Message
 
-### Checklist
-<!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
-<!--- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
-- [ ] I have read the [contributing](https://github.com/SeleniumHQ/selenium/blob/trunk/CONTRIBUTING.md) document.
-- [ ] My change requires a change to the documentation.
-- [ ] I have updated the documentation accordingly.
-- [ ] I have added tests to cover my changes.
-- [ ] All new and existing tests passed.
-<!--- Provide a general summary of your changes in the Title above -->
+For more details, see:
+https://reactnative.dev/contributing/changelogs-in-pull-requests
+-->
+
+## Test Plan:
+
+<!-- Demonstrate the code is solid. Example: The exact commands you ran and their output, screenshots / videos if the pull request changes the user interface. -->

@@ -1,135 +1,153 @@
-projectFilesBackup/
-*.iws
-.DS_Store
-.svn
-.credentials.dat
-.ijwb
-mockpiframe.log
-mockpiframe.log.lck
-junitvmwatcher*.properties
-test-output/
-.*.swp
-*~
-common/build
+# Xcode
+!**/*.xcodeproj
+!**/*.pbxproj
+!**/*.xcworkspacedata
+!**/*.xcsettings
+!**/*.xcscheme
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+**/.xcode.env.local
+/poackages/react-native/sdks/downloads/
+
+# Gradle
 /build/
-cpp/iedriver/IEReturnTypes.h
-java/client/src/org/openqa/selenium/ie/IeReturnTypes.java
-java/server/test/org/openqa/selenium/example
-javascript/deps.js
-javascript/node/selenium-webdriver/node_modules/
-javascript/node/selenium-webdriver/lib/atoms/find-elements.js
-javascript/node/selenium-webdriver/lib/atoms/get-attribute.js
-javascript/node/selenium-webdriver/lib/atoms/is-displayed.js
-javascript/node/selenium-webdriver/lib/atoms/mutation-listener.js
-javascript/safari-driver/node_modules/
-javascript/webdriver/devtools/types/
-.idea/vcs.xml
-.idea/workspace.xml
-.idea/dictionaries/
-.idea/scopes/
-.idea/sonarlint/
-.idea/qaplug_profiles.xml
-out
-cpp/IEDriver/sizzle.h
-third_party/gecko-*
-cpp/iedriver/Generated/atoms.h
-cpp/iedriver/sizzle.h
-chromedriver.log
-junit*.properties
-*.rbc
-.rbx
-.yardoc
-rb/.yardoc
-.tm_properties
-maven/*/src
-maven/target
-maven/*/target
-maven/.idea
-maven/*.iml
-maven/*/*.iml
-maven-metadata-.xml
-maven-metadata-.xml.sha1
-node_modules/
-resolver-status.properties
-java/build/
-java/client/build/
-java/client/log.txt
-java/client/iedriver.log
-java/server/build/
-__pycache__
-.tox
-*.pyc
-dist/
-py/selenium/webdriver/common/devtools/*.py
-py/selenium/webdriver/common/devtools/py.typed
-!py/selenium/webdriver/common/devtools/util.py
-py/selenium/webdriver/firefox/amd64/
-py/selenium/webdriver/firefox/webdriver.xpi
-py/selenium/webdriver/firefox/webdriver_prefs.json
-py/selenium/webdriver/firefox/x86/
-py/selenium/webdriver/remote/findElements.js
-py/selenium/webdriver/remote/getAttribute.js
-py/selenium/webdriver/remote/isDisplayed.js
-py/docs/build/
-py/build/
-py/LICENSE
-py/selenium/webdriver/common/linux/
-py/selenium/webdriver/common/windows/
-py/selenium/webdriver/common/macos/
-selenium.egg-info/
-third_party/java/jetty/jetty-repacked.jar
-*.user
-*.cache
-dotnet/**/bin/
-obj/
-*.opensdf
-*.suo
-*.sdf
-*.vs
-*.opendb
-*.VC.db
-*.aps
-launchSettings.json
-Generated/
-ipch/
-/iedriver.log
-/phantomjsdriver.log
-geckodriver.log
-ghostdriver.log
-.tags
+/packages/react-native-gradle-plugin/build/
+/packages/rn-tester/build
+/packages/rn-tester/android/app/.cxx/
+/packages/rn-tester/android/app/build/
+/packages/rn-tester/android/app/gradle/
+/packages/rn-tester/android/app/gradlew
+/packages/rn-tester/android/app/gradlew.bat
+/packages/react-native/ReactAndroid/build/
+/packages/react-native/ReactAndroid/.cxx/
+/packages/react-native/ReactAndroid/gradle/
+/packages/react-native/ReactAndroid/gradlew
+/packages/react-native/ReactAndroid/gradlew.bat
+/packages/react-native/ReactAndroid/external-artifacts/build/
+/packages/react-native/ReactAndroid/external-artifacts/artifacts/
+/packages/react-native/ReactAndroid/flipper-integration/build/
+/packages/react-native/ReactAndroid/hermes-engine/build/
+/packages/react-native/ReactAndroid/hermes-engine/.cxx/
+/packages/react-native/template/android/app/build/
+/packages/react-native/template/android/build/
+
+# Buck
+.buckd
+buck-out
+/.lsp.buckd
+/.lsp-buck-out
+/packages/react-native/ReactAndroid/src/main/jni/prebuilt/lib/
+/packages/react-native/ReactAndroid/src/main/gen
+/.cpplsp.buckd
+
+# Android Studio
+.project
+.settings
+.classpath
+
+# Watchman
+.watchmanconfig
+
+# Android
+.idea
+.gradle
+local.properties
+*.iml
+/packages/react-native/android/*
+!/packages/react-native/android/README.md
+
+# Node
+node_modules
+*.log
+.nvm
+package-lock.json
+
+# OS X
+.DS_Store
+
+# Test generated files
+/packages/react-native/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
+*.js.meta
+
+/coverage
+/third-party
+
+# Test Reports
+/reports
+
+# Stack Dumps generated when programs crash (Ex. bash.exe.stackdump on Win)
+*.stackdump
+
+# Root dir shouldn't have Xcode project
+/*.xcodeproj
+
+# ReactCommon subdir shouldn't have Xcode project
+/packages/react-native/ReactCommon/**/*.xcodeproj
+
+# Libs that shouldn't have Xcode project
+/packages/react-native/Libraries/FBLazyVector/**/*.xcodeproj
+/packages/react-native/Libraries/RCTRequired/**/*.xcodeproj
+/packages/react-native/React/CoreModules/**/*.xcodeproj
+/packages/react-native/React/FBReactNativeSpec/**/*.xcodeproj
+/packages/react-native-codegen/**/*.xcodeproj
+
+# Ruby Gems (Bundler)
+/packages/react-native/vendor
+/packages/react-native/template/vendor
 .ruby-version
-GPATH
-GRTAGS
-GSYMS
-GTAGS
-/rb/.bundle
-/rb/.idea
-rb/bin/
-rb/lib/selenium/devtools/v1*
-.sonar/
-.idea/sonarIssues.xml
-.idea/inspectionProfiles/profiles_settings.xml
-.idea/inspectionProfiles/Project_Default.xml
-.idea/misc.xml
-third_party/py/googlestorage/client_secrets.json
-.venv
-venv
-venv3
-py/.idea
-rust/target
-rust/.idea
+/**/.ruby-version
 
-# Bazel stuff
-bazel-bin
-bazel-genfiles
-bazel-out
-bazel-selenium
-bazel-testlogs
+# iOS / CocoaPods
+/packages/react-native/template/ios/build/
+/packages/react-native/template/ios/Pods/
+/packages/react-native/template/ios/Podfile.lock
+/packages/rn-tester/Gemfile.lock
 
-/.vscode/
-/.scannerwork/
-/.bazelrc.local
+# Ignore RNTester specific Pods, but keep the __offline_mirrors__ here.
+/packages/rn-tester/Pods/*
+!/packages/rn-tester/Pods/__offline_mirrors_hermes__
+!/packages/rn-tester/Pods/__offline_mirrors_jsc__
 
-# Engflow
-*.crt
-*.key
+# @react-native/codegen
+/packages/react-native/React/FBReactNativeSpec/FBReactNativeSpec
+/packages/react-native-codegen/lib
+/packages/react-native-codegen/tmp/
+/packages/react-native/ReactCommon/react/renderer/components/rncore/
+/packages/rn-tester/NativeModuleExample/ScreenshotManagerSpec*
+/**/RCTThirdPartyFabricComponentsProvider.*
+
+# @react-native/codegen-typescript-test
+/packages/react-native-codegen-typescript-test/lib
+
+# Additional SDKs
+/packages/react-native/sdks/download
+/packages/react-native/sdks/hermes
+/packages/react-native/sdks/hermesc
+
+# Visual studio
+.vscode
+.vs
+
+# Android memory profiler files
+*.hprof
+
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
+
+# E2E files
+/packages/rn-tester-e2e/apps/*.apk
+/packages/rn-tester-e2e/apps/*.app
